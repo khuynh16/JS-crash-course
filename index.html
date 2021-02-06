@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript on Steroids</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Challenge 1: Your Age in Days -->
+
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <!-- Challenge 2: Cat Generator -->
+
+    <div class="container-2">
+        <h2>Challenge 2 Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+
+        <div class="flex-box-container-2" id="flex-cat-gen">  
+        </div>
+    </div>
+
+    <!-- Challenge 3 Rock Paper Scissors -->
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://images.homedepot-static.com/productImages/fa9fe9af-bd06-4a60-be35-384709e37a65/svn/outdoor-essentials-bagged-204952-64_1000.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="https://www.officemax.co.nz/images/ProductImages/500/3557618.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="https://s7d2.scene7.com/is/image/OCProduction/gs454?wid=800&qlt=85&fmt=pjpeg&pscan=auto&op_sharpen=0&resMode=sharp2&op_usm=1.25,0.5,0,0" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+        <!-- create new div here for restart button -->
+        <div class="flex-box-rps">
+            <button class="btn btn-success" id="restartRPSgame" onclick="restartRPS()">Restart Game!</button>
+        </div>
+        
+
+        
+    </div>
+
+
+    <!-- Challenge 5 BlackJack -->
+
+    <div class="container-5">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
